@@ -11,18 +11,18 @@ const emagiSearch = function(userInput){
     let result =[];
     //we're going though every element of the words array
 for(let i = 0; i < words.length;i++){
-    //this will compare the user input with each element in the words array
-if(userInput === words[i]){
-    // this push the element at that index from the symbols array into the new array
-result.push(symbols[i])
-}
+//     //this will compare the user input with each element in the words array
+// if(userInput === words[i]){
+//     // this push the element at that index from the symbols array into the new array
+// result.push(symbols[i])
+
 //checks if the element of the array includes the user input
-else if(words[i].includes(userInput)){
+/*else*/ if(words[i].includes(userInput)){
 //push the element at that index from the symbols array into the new array.
 result.push(symbols[i])
 }
-}
-return result
-} 
+// }
 
+} return result
+} 
 module.exports = emagiSearch;
