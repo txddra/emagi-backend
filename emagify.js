@@ -1,16 +1,22 @@
 const symbols = require('./emagi-symbols.js');
 const words = require('./emagi-words.js')
 
-const emagify = function(arr){
+const emagify = function(userInput){
+    // our output is going to be put in a new array
     let result = [];
-    // loop through the current arr
-    for(let i = 0; i < arr.length; i++){
-// push the result of the symbols into the new array
-result.push(arr[i])    
+    // loop through the current array
+    for(let i = 0; i < userInput.length; i++){
+// if the user input is not a word that is recognized then leave it alone
+if(userInput === words[i]){
+result.push(symbols[i])
+}
+// result.push(symbols.indexOf(userInput[i]))    
+// }elseif(){
+       
+}return result;
+ 
 }
 
-    return result;
-}
 
 // const arraySymbols =[ 
 // '😁',
